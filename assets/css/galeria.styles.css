@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
-main {
+body{
+    background-color: #3c096c;
+}
+
+main { 
     font-family: 'Mulish', sans-serif;
     display: flex;
     align-items: center;
@@ -25,7 +29,7 @@ main {
     background-repeat: no-repeat;
     height: 80vh;
     border-radius: 50px;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     flex: 0.5;
     margin: 10px;
