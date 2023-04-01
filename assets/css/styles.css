@@ -15,9 +15,9 @@ body {
     background-color: #240046;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 24px;
+    padding: 18px;
 }
 
 .cabecalho-imagem {
@@ -68,23 +68,39 @@ body {
     color: #ffffff;   
 }
 
-.conteudo-principal-mensagem-botao {
-    background-color: #177e89;
+.conteudo-principal-mensagem-botao{
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    
+    cursor: pointer;
+    overflow: hidden;
+    
     width: 180px;
     height: 60px;
     border: none;
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-
-    font-family: 'Roboto Slab', serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: #ffffff;
-    cursor: pointer;
 }
 
-.conteudo-principal-mensagem-botao:hover {
-    background-color: #6A65FA;
+.conteudo-principal-mensagem-botao:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-out;
+}
+
+.conteudo-principal-mensagem-botao:hover:before {
+left: 0;
+
 }
 
 .conteudo-principal-mensagem-imagem {
@@ -132,3 +148,6 @@ body {
     height: 40px;
 }
 
+* {
+    user-select: none;
+  }
