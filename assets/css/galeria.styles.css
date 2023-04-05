@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #3c096c;
 }
 
-main { 
+main {
     font-family: 'Mulish', sans-serif;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@ main {
     margin: 0;
 }
 
-.container{
+.container {
     display: flex;
     width: 90vw;
 }
@@ -29,13 +29,11 @@ main {
     background-repeat: no-repeat;
     height: 80vh;
     border-radius: 50px;
-    color: #ffffff;
     cursor: pointer;
     flex: 0.5;
     margin: 10px;
     position: relative;
     transition: flex 0.7s ease-in;
-
 }
 
 .panel h3 {
@@ -45,8 +43,8 @@ main {
     left: 20px;
     margin: 0;
     opacity: 0;
-    color: rgb(255, 255, 255);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #3c096c, 1px -1px 0 #3c096c, -1px 1px 0 #3c096c, 1px 1px 0 #3c096c;
 }
 
 .panel.active {
@@ -58,14 +56,14 @@ main {
     transition: opacity 0.3s ease-in 0.4s;
 }
 
-@media(max-width: 480px){
-    .container{
+@media(max-width: 480px) {
+    .container {
         width: 100vw;
     }
-    
+
     .panel:nth-of-type(4),
     .panel:nth-of-type(5),
-    .panel:nth-of-type(6){
+    .panel:nth-of-type(6) {
         display: none;
     }
 }

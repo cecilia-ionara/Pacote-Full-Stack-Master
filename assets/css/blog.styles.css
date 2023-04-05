@@ -12,12 +12,12 @@ body {
 }
 
 .cabecalho {
+    background-color: #240046;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    padding: 24px;
-    background-color: #240046;
+    padding: 18px;
 }
 
 .cabecalho-imagem {
@@ -30,17 +30,17 @@ body {
 }
 
 .cabecalho-menu-item {
-    font-family: 'Roboto', sans-serif;
-    color: #020CF7;
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #3c096c;
 }
 
@@ -64,7 +64,7 @@ body {
 }
 
 .main__title:hover {
-    color: #020CF7;
+    color: #e598ff;
 }
 
 .main__subtitle {
@@ -78,14 +78,14 @@ body {
     margin: 10px;
     font-size: 12px;
     font-style: italic;
-    color: #ffffff;
+    color: #e598ff;
 }
 
 .main__tag {
     font-size: 14px;
     padding: 5px 7px;
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    color: #e598ff;
+    border: 1px solid #e598ff;
     border-radius: 15px;
 }
 
@@ -110,16 +110,15 @@ body {
     text-decoration: none;
     font-size: 16px;
     letter-spacing: 1.5;
-    color: #020CF7;
-    background-color: #FABE50;
+    color: #eaeaeb;
+    background-color: #020CF7;
     padding: 10px 20px;
     transition: .3s;
-    
 }
 
 .main__btn:hover {
-    color: #FABE50;
-    background-color: #020CF7;
+    color: #020CF7;
+    background-color: #eaeaeb;
 }
 
 .main__info {
@@ -137,7 +136,7 @@ body {
 
 .main__p {
     font-size: 14px;
-    color: #464646;
+    color: #eaeaeb;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -149,13 +148,13 @@ body {
 .main__a {
     text-decoration: none;
     font-size: 14px;
-    color: #464646;
+    color: #eaeaeb;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .main__a:hover {
-    color: #020CF7;
+    color: #e598ff;
 }
 
 .main__sidebar {
@@ -163,13 +162,13 @@ body {
     padding: 40px 10px;
 }
 
-.sidebar__top{
+.sidebar__top {
     border: 1px solid #eaeaeb;
     padding: 15px 20px;
 }
 
 .sidebar__title {
-    background-color: #FABE50;
+    background-color: #e598ff;
     text-align: center;
     padding: 10px 20px;
     margin: 0;
@@ -205,7 +204,7 @@ body {
 
 .sidebar__post-title {
     font-size: 14px;
-    color: #020CF7;
+    color: #eaeaeb;
     text-decoration: none;
 }
 
@@ -215,5 +214,6 @@ body {
 
 .sidebar__post-date {
     font-size: 12px;
+    color: #eaeaeb;
     margin: 5px 0 0 0;
 }
